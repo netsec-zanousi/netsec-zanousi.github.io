@@ -1,0 +1,25 @@
+# _config.yml
+# Basic site configuration for GitHub Pages with Jekyll
+
+# Site settings
+baseurl: ""
+url: "https://netsec-zanousi.github.io"
+title: "Mojtaba Zanoosi"
+author: "Mojtaba Zanoosi"
+description: "Personal site for networking, Linux, and security topics."
+theme: minima
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  pages:
+    output: true
+    permalink: /:name/
+
+include:
+  - _pages
+
+markdown: kramdown
