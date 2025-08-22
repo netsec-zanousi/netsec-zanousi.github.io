@@ -3,89 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mojtaba Zanousi - Homepage</title>
+    <title>Your Name - Personal Website</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Mojtaba Zanousi</h1>
-        <p class="subtitle">Your Professional Tagline</p>
-        <nav>
-            <a href="#about">About</a>
-            <a href="#talks">Talks</a>
-            <a href="#writing">Writing</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h2>About</h2>
-        <div class="bio">
-            <div class="bio-text">
-                <p>This is where you'd put your bio. Talk about who you are, what you do, and what you're passionate about. Keep it professional but personable.</p>
-                <p>You might want to mention your current role, past experiences, or areas of expertise. This is your chance to introduce yourself to visitors.</p>
+    <div class="container">
+        <!-- Left Sidebar with Contact Information -->
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="images/profile.jpg" alt="Your Name" class="profile-img">
+                <h1>Your Name</h1>
+                <p class="tagline">Your Professional Tagline</p>
+                
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li class="contact-item">
+                            <span class="icon">📧</span>
+                            <span>your.email@example.com</span>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon">🐦</span>
+                            <a href="https://twitter.com/yourhandle">@yourhandle</a>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon">👔</span>
+                            <a href="https://linkedin.com/in/yourprofile">LinkedIn Profile</a>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon">💻</span>
+                            <a href="https://github.com/yourusername">GitHub Profile</a>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon">📍</span>
+                            <span>Your Location</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                    </div>
+                </div>
             </div>
-            <img src="images/961117.JPG" alt="Your Name" class="profile-img">
-        </div>
-    </section>
+        </aside>
 
-    <section id="talks">
-        <h2>Talks & Presentations</h2>
-        <div class="talk">
-            <h3>Talk Title One</h3>
-            <p>Event Name, Date</p>
-            <p>Brief description of what the talk was about. You can include links to slides or video recordings if available.</p>
-        </div>
-        <div class="talk">
-            <h3>Talk Title Two</h3>
-            <p>Event Name, Date</p>
-            <p>Brief description of what the talk was about. You can include links to slides or video recordings if available.</p>
-        </div>
-    </section>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <nav class="main-nav">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="#blog">Blog</a>
+            </nav>
 
-    <section id="writing">
-        <h2>Writing</h2>
-        <div class="article">
-            <h3><a href="#">Article Title One</a></h3>
-            <p>Publication Name, Date</p>
-            <p>Brief description or excerpt from the article to give readers a sense of what it's about.</p>
-        </div>
-        <div class="article">
-            <h3><a href="#">Article Title Two</a></h3>
-            <p>Publication Name, Date</p>
-            <p>Brief description or excerpt from the article to give readers a sense of what it's about.</p>
-        </div>
-    </section>
+            <section id="about" class="section">
+                <h2>About Me</h2>
+                <p>Hello! I'm [Your Name], a [Your Profession] with [X] years of experience specializing in [Your Specialties]. I'm passionate about creating innovative solutions and enjoy tackling complex problems.</p>
+                <p>My expertise includes [Area 1], [Area 2], and [Area 3]. I believe in continuous learning and staying updated with the latest industry trends.</p>
+            </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3><a href="#">Project One</a></h3>
-            <p>Technologies used: HTML, CSS, JavaScript</p>
-            <p>Description of the project and what it does.</p>
-        </div>
-        <div class="project">
-            <h3><a href="#">Project Two</a></h3>
-            <p>Technologies used: Python, Django</p>
-            <p>Description of the project and what it does.</p>
-        </div>
-    </section>
+            <section id="experience" class="section">
+                <h2>Experience</h2>
+                
+                <div class="experience-item">
+                    <h3>Senior Developer</h3>
+                    <p class="company">Tech Company Inc.</p>
+                    <p class="date">January 2020 - Present</p>
+                    <p>Lead development of web applications using modern JavaScript frameworks. Managed a team of 5 developers and collaborated with cross-functional teams.</p>
+                    <ul>
+                        <li>Increased application performance by 40%</li>
+                        <li>Implemented CI/CD pipeline reducing deployment time</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <h3>Web Developer</h3>
+                    <p class="company">Digital Solutions LLC</p>
+                    <p class="date">June 2017 - December 2019</p>
+                    <p>Developed and maintained client websites using HTML, CSS, and JavaScript. Collaborated with designers to implement responsive web designs.</p>
+                    <ul>
+                        <li>Built over 30 client websites</li>
+                        <li>Improved page load times by 60% on average</li>
+                    </ul>
+                </div>
+            </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>You can reach me at:</p>
-        <ul>
-            <li>Email: your.email@example.com</li>
-            <li>Twitter: <a href="https://twitter.com/yourhandle">@yourhandle</a></li>
-            <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile">Your Profile</a></li>
-            <li>GitHub: <a href="https://github.com/yourusername">yourusername</a></li>
-        </ul>
-    </section>
+            <section id="projects" class="section">
+                <h2>Projects</h2>
+                
+                <div class="project-card">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-featured online store built with React, Node.js, and MongoDB. Includes user authentication, payment processing, and admin dashboard.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Task Management App</h3>
+                    <p>A productivity application that helps users organize tasks, set deadlines, and track progress. Built with Vue.js and Firebase.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Weather Dashboard</h3>
+                    <p>A responsive web application that displays current weather and forecasts using data from a weather API.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </section>
 
-    <footer>
-        <p>&copy; Your Name <span id="current-year"></span></p>
-    </footer>
+            <section id="education" class="section">
+                <h2>Education</h2>
+                
+                <div class="education-item">
+                    <h3>Master of Computer Science</h3>
+                    <p class="institution">University of Technology</p>
+                    <p class="date">2015 - 2017</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Bachelor of Science in Software Engineering</h3>
+                    <p class="institution">State University</p>
+                    <p class="date">2011 - 2015</p>
+                </div>
+            </section>
+
+            <section id="blog" class="section">
+                <h2>Latest Blog Posts</h2>
+                
+                <div class="blog-post">
+                    <h3><a href="#">Understanding CSS Grid Layout</a></h3>
+                    <p class="post-date">March 15, 2023</p>
+                    <p>A comprehensive guide to CSS Grid Layout with practical examples and use cases for modern web development.</p>
+                </div>
+                
+                <div class="blog-post">
+                    <h3><a href="#">Introduction to React Hooks</a></h3>
+                    <p class="post-date">February 8, 2023</p>
+                    <p>Learn how to use React Hooks to simplify your functional components and manage state effectively.</p>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
 
     <script>
         // Update copyright year automatically
