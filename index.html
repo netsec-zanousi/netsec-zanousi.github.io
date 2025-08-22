@@ -5,24 +5,97 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home - My Website</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <div class="container">
     <!-- Navigation -->
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
+      <div class="nav-brand">
+        <span>Your Name</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <div class="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
     </nav>
 
-    <!-- Summary -->
-    <header>
-      <h1>Welcome to My Website</h1>
-      <p>This is my personal site where I share my projects, write blogs, and provide ways to connect with me.</p>
-    </header>
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <div class="profile-image">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Your Name">
+          </div>
+          <div class="hero-text">
+            <h1>Hi, I'm <span class="highlight">Your Name</span></h1>
+            <p class="tagline">Web Developer & UI/UX Designer</p>
+            <p class="summary">I create beautiful, functional websites and applications with a focus on user experience and clean code. With over 5 years of experience in the industry, I've helped numerous clients bring their digital visions to life.</p>
+            <div class="hero-buttons">
+              <a href="projects.html" class="btn btn-primary">View My Work</a>
+              <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-indicator">
+          <span>Scroll down</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills-section">
+        <h2>What I Do</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>Building responsive websites and web applications using modern technologies like HTML5, CSS3, JavaScript, and React.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Creating intuitive user interfaces and experiences that are both visually appealing and easy to navigate.</p>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Responsive Design</h3>
+            <p>Ensuring websites look great and function perfectly on all devices, from desktops to smartphones.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2023 Your Name. All rights reserved.</p>
+    </footer>
   </div>
+
+  <script>
+    // Simple JavaScript for mobile navigation toggle
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('show');
+    });
+  </script>
 </body>
 </html>
