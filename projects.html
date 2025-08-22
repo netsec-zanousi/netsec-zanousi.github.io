@@ -3,31 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Your Name - Projects</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <h1>My Projects</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-    </nav>
-  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <!-- You can copy the same sidebar from index.html -->
+      <div class="profile-card">
+        <img src="images/profile.jpg" alt="Your Name" class="profile-img">
+        <h1>Your Name</h1>
+        <p class="tagline">Your Professional Tagline</p>
+      </div>
+    </aside>
 
-  <main>
-    <section>
-      <h2>Project 1</h2>
-      <p>Description of your project.</p>
-    </section>
-    <section>
-      <h2>Project 2</h2>
-      <p>Description of another project.</p>
-    </section>
-  </main>
+    <main class="main-content">
+      <nav class="main-nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#experience">Experience</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#education">Education</a>
+        <a href="index.html#blog">Blog</a>
+      </nav>
 
-  <footer>
-    <p>&copy; 2025 Your Name</p>
-  </footer>
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        
+        <div class="project-card">
+          <h3>E-Commerce Platform</h3>
+          <p>A full-featured online store built with React, Node.js, and MongoDB. Includes user authentication, payment processing, and admin dashboard.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">Live Demo</a>
+            <a href="#" class="project-link">GitHub</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <h3>Task Management App</h3>
+          <p>A productivity application that helps users organize tasks, set deadlines, and track progress. Built with Vue.js and Firebase.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">Live Demo</a>
+            <a href="#" class="project-link">GitHub</a>
+          </div>
+        </div>
+        
+        <div class="project-card">
+          <h3>Weather Dashboard</h3>
+          <p>A responsive web application that displays current weather and forecasts using data from a weather API.</p>
+          <div class="project-links">
+            <a href="#" class="project-link">Live Demo</a>
+            <a href="#" class="project-link">GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
