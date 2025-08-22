@@ -1,8 +1,4 @@
-# index.md (Home Page)
----
-layout: default
-title: "Home"
----
+
 
 # Welcome to My Personal Site
 
