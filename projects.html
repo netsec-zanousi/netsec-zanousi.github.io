@@ -1,70 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Projects</title>
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Projects</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <div class="container">
-    <aside class="sidebar">
-      <!-- You can copy the same sidebar from index.html -->
-      <div class="profile-card">
-        <img src="images/profile.jpg" alt="Your Name" class="profile-img">
-        <h1>Your Name</h1>
-        <p class="tagline">Your Professional Tagline</p>
-      </div>
-    </aside>
+    <div class="container">
+        <!-- Left Sidebar with Contact Information -->
+        <aside class="sidebar">
+            <div class="profile-card">
+                <img src="images/profile.jpg" alt="Your Name" class="profile-img">
+                <h1>Your Name</h1>
+                <p class="tagline">Your Professional Tagline</p>
+                
+                <div class="contact-info">
+                    <h2>Contact</h2>
+                    <ul>
+                        <li class="contact-item">
+                            <span class="icon">📧</span>
+                            <span>your.email@example.com</span>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon">🐦</span>
+                            <a href="https://twitter.com/yourhandle">@yourhandle</a>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon">👔</span>
+                            <a href="https://linkedin.com/in/yourprofile">LinkedIn Profile</a>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon">💻</span>
+                            <a href="https://github.com/yourusername">GitHub Profile</a>
+                        </li>
+                        <li class="contact-item">
+                            <span class="icon">📍</span>
+                            <span>Your Location</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skills">
+                    <h2>Skills</h2>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Web Development</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">CSS</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
 
-    <main class="main-content">
-      <nav class="main-nav">
-        <a href="index.html#about">About</a>
-        <a href="index.html#experience">Experience</a>
-        <a href="projects.html">Projects</a>
-        <a href="index.html#education">Education</a>
-        <a href="index.html#blog">Blog</a>
-      </nav>
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="index.html#about">About</a>
+                <a href="index.html#experience">Experience</a>
+                <a href="projects.html" class="active">Projects</a>
+                <a href="index.html#education">Education</a>
+                <a href="index.html#blog">Blog</a>
+            </nav>
 
-      <section id="projects" class="section">
-        <h2>Projects</h2>
+            <section class="section">
+                <h1>My Projects</h1>
+                <p class="intro-text">Here's a collection of projects I've worked on. Each project represents different skills and technologies I've mastered over time.</p>
+                
+                <div class="filters">
+                    <span>Filter by:</span>
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web Development</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="design">UI/UX Design</button>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/3498db/ffffff" alt="E-Commerce Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Platform</h3>
+                            <p>A full-featured online store built with React, Node.js, and MongoDB. Includes user authentication, payment processing, and admin dashboard.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card" data-category="web mobile">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/2ecc71/ffffff" alt="Task Management App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>A productivity application that helps users organize tasks, set deadlines, and track progress. Built with Vue.js and Firebase.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">PWA</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 -->
+                    <div class="project-card" data-category="web design">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/e74c3c/ffffff" alt="Weather Dashboard">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Weather Dashboard</h3>
+                            <p>A responsive web application that displays current weather and forecasts using data from a weather API with beautiful data visualization.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">API</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 4 -->
+                    <div class="project-card" data-category="mobile">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/9b59b6/ffffff" alt="Fitness Tracker App">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">App Store</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Fitness Tracker App</h3>
+                            <p>A mobile application that tracks workouts, nutrition, and progress. Includes social features to share achievements with friends.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React Native</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 5 -->
+                    <div class="project-card" data-category="design">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/f39c12/ffffff" alt="UI Design System">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Behance</a>
+                                    <a href="#" class="project-link">Figma</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>UI Design System</h3>
+                            <p>A comprehensive design system with reusable components, typography scales, and color palettes for consistent user interfaces.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">Design Systems</span>
+                                <span class="tech-tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 6 -->
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/1abc9c/ffffff" alt="Blog Platform">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">Live Demo</a>
+                                    <a href="#" class="project-link">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Blog Platform</h3>
+                            <p>A modern blogging platform with Markdown support, syntax highlighting, and responsive design. Built with Gatsby and GraphQL.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Gatsby</span>
+                                <span class="tech-tag">GraphQL</span>
+                                <span class="tech-tag">Markdown</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script>
+        // Update copyright year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
         
-        <div class="project-card">
-          <h3>E-Commerce Platform</h3>
-          <p>A full-featured online store built with React, Node.js, and MongoDB. Includes user authentication, payment processing, and admin dashboard.</p>
-          <div class="project-links">
-            <a href="#" class="project-link">Live Demo</a>
-            <a href="#" class="project-link">GitHub</a>
-          </div>
-        </div>
-        
-        <div class="project-card">
-          <h3>Task Management App</h3>
-          <p>A productivity application that helps users organize tasks, set deadlines, and track progress. Built with Vue.js and Firebase.</p>
-          <div class="project-links">
-            <a href="#" class="project-link">Live Demo</a>
-            <a href="#" class="project-link">GitHub</a>
-          </div>
-        </div>
-        
-        <div class="project-card">
-          <h3>Weather Dashboard</h3>
-          <p>A responsive web application that displays current weather and forecasts using data from a weather API.</p>
-          <div class="project-links">
-            <a href="#" class="project-link">Live Demo</a>
-            <a href="#" class="project-link">GitHub</a>
-          </div>
-        </div>
-      </section>
-
-      <footer>
-        <p>&copy; <span id="current-year"></span> Your Name. All rights reserved.</p>
-      </footer>
-    </main>
-  </div>
-
-  <script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-  </script>
+        // Project filtering functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const projectCards = document.querySelectorAll('.project-card');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active');
+                    
+                    const filterValue = button.getAttribute('data-filter');
+                    
+                    // Show/hide projects based on filter
+                    projectCards.forEach(card => {
+                        if (filterValue === 'all') {
+                            card.style.display = 'block';
+                        } else {
+                            const categories = card.getAttribute('data-category').split(' ');
+                            if (categories.includes(filterValue)) {
+                                card.style.display = 'block';
+                            } else {
+                                card.style.display = 'none';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
