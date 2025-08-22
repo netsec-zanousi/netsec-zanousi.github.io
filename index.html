@@ -3,66 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Your Expertise</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Links to CSS file we'll create next -->
+    <title>Your Name - Homepage</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <h1>Your Name</h1>
-        <p>Your tagline, e.g., containers, eBPF, security, Kubernetes, software engineering</p>
-        <p>A personal statement: I love making, understanding & explaining code.</p>
+        <p class="subtitle">Your Professional Tagline</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#talks">Talks</a>
+            <a href="#writing">Writing</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <section id="background">
-        <h2>Professional Background</h2>
-        <p>Describe your current role, e.g., Chief Open Source Officer at [Company]. Involved in [projects/boards].</p>
-        <p>Past roles: Chaired [committee], co-chaired [events].</p>
+    <section id="about">
+        <h2>About</h2>
+        <div class="bio">
+            <div class="bio-text">
+                <p>This is where you'd put your bio. Talk about who you are, what you do, and what you're passionate about. Keep it professional but personable.</p>
+                <p>You might want to mention your current role, past experiences, or areas of expertise. This is your chance to introduce yourself to visitors.</p>
+            </div>
+            <img src="images/profile.jpg" alt="Your Name" class="profile-img">
+        </div>
     </section>
 
-    <section id="interests">
-        <h2>Personal Interests</h2>
-        <p>Outside work: Cycling (link to Strava), gigs, socializing, yoga, making music (link to SoundCloud).</p>
+    <section id="talks">
+        <h2>Talks & Presentations</h2>
+        <div class="talk">
+            <h3>Talk Title One</h3>
+            <p>Event Name, Date</p>
+            <p>Brief description of what the talk was about. You can include links to slides or video recordings if available.</p>
+        </div>
+        <div class="talk">
+            <h3>Talk Title Two</h3>
+            <p>Event Name, Date</p>
+            <p>Brief description of what the talk was about. You can include links to slides or video recordings if available.</p>
+        </div>
     </section>
 
-    <section id="books">
-        <h2>Books</h2>
-        <p>Book 1: Title - Description. Buy at [link].</p>
-        <p>Book 2: Title - Description. Buy at [link].</p>
-        <p>Amazon author page: [link]</p>
+    <section id="writing">
+        <h2>Writing</h2>
+        <div class="article">
+            <h3><a href="#">Article Title One</a></h3>
+            <p>Publication Name, Date</p>
+            <p>Brief description or excerpt from the article to give readers a sense of what it's about.</p>
+        </div>
+        <div class="article">
+            <h3><a href="#">Article Title Two</a></h3>
+            <p>Publication Name, Date</p>
+            <p>Brief description or excerpt from the article to give readers a sense of what it's about.</p>
+        </div>
     </section>
 
-    <section id="social">
-        <h2>Connect with Me</h2>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3><a href="#">Project One</a></h3>
+            <p>Technologies used: HTML, CSS, JavaScript</p>
+            <p>Description of the project and what it does.</p>
+        </div>
+        <div class="project">
+            <h3><a href="#">Project Two</a></h3>
+            <p>Technologies used: Python, Django</p>
+            <p>Description of the project and what it does.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>You can reach me at:</p>
         <ul>
-            <li><a href="https://linkedin.com/in/yourprofile">LinkedIn</a></li>
-            <li><a href="https://instagram.com/yourprofile">Instagram</a></li>
-            <li><a href="https://github.com/yourusername">GitHub</a></li>
-            <li><a href="https://youtube.com/@yourchannel">YouTube</a></li>
-            <li><a href="https://soundcloud.com/yourprofile">SoundCloud</a></li>
+            <li>Email: your.email@example.com</li>
+            <li>Twitter: <a href="https://twitter.com/yourhandle">@yourhandle</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile">Your Profile</a></li>
+            <li>GitHub: <a href="https://github.com/yourusername">yourusername</a></li>
         </ul>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Containers & Kubernetes: Expertise in [details].</li>
-            <li>eBPF & Security: Live coding demos in [languages].</li>
-            <li>Software Engineering: Experience in [languages], Google Developer Expert.</li>
-            <li>Open Source: Board member at [org].</li>
-            <li>Writing: Articles for [publications], books.</li>
-            <li>Speaking: Keynotes at [conferences].</li>
-        </ul>
-    </section>
-
-    <section id="highlights">
-        <h2>Recent Highlights</h2>
-        <p>Article/Video: Title - Brief description with link.</p>
-        <p>Another: Title - Brief description with link.</p>
-        <!-- Add an image if you have one: <img src="your-image.jpg" alt="Description"> -->
     </section>
 
     <footer>
-        <p>&copy; 2025 Your Name. All rights reserved.</p>
+        <p>&copy; Your Name <span id="current-year"></span></p>
     </footer>
+
+    <script>
+        // Update copyright year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
