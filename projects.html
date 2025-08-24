@@ -3,31 +3,59 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - My Website</title>
+  <title>Mojtaba Zanousi - Projects</title>
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="images/961117.JPG" alt="Mojtaba Zanousi" class="profile-img">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="projects.html" class="active">PROJECTS</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="index.html#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-    <header>
-      <h1>Projects</h1>
-    </header>
-    <main>
-      <ul>
-        <li><strong>Project 1:</strong> Description of project 1.</li>
-        <li><strong>Project 2:</strong> Description of project 2.</li>
-        <li><strong>Project 3:</strong> Description of project 3.</li>
-      </ul>
+    <!-- Main Content -->
+    <main class="content">
+      <section id="projects-intro" class="no-background">
+        <h1>Projects</h1>
+        <p class="tagline">Showcasing my work in Networking, Security, and Software</p>
+      </section>
+
+      <section class="projects">
+        <h2>Highlighted Projects</h2>
+
+        <div class="project-item">
+          <h3>Industrial Firewall for Modbus & Siemens S7</h3>
+          <p>Designed and implemented a custom embedded firewall supporting industrial protocols, with web-based configuration and real-time monitoring.</p>
+        </div>
+
+        <div class="project-item">
+          <h3>RBAC & AAA Framework for Linux Applications</h3>
+          <p>Developed a role-based access control system integrated with PAM for secure authentication, authorization, and session management.</p>
+        </div>
+
+        <div class="project-item">
+          <h3>Client-Server Embedded Applications</h3>
+          <p>Created cross-platform embedded applications in C/C++ and Qt, including file transfer, session handling, and custom industrial solutions.</p>
+        </div>
+
+        <div class="project-item">
+          <h3>DevOps Integration & Automation</h3>
+          <p>Streamlined CI/CD processes using Docker, Git, and Azure DevOps, including automated testing and deployment pipelines for embedded systems.</p>
+        </div>
+
+      </section>
+
+
     </main>
   </div>
 </body>
 </html>
-

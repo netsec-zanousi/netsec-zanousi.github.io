@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Your Name</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header & Navigation -->
+        <header>
+            <div class="header-container">
+                <a href="index.html" class="logo">Mojtaba Zanousi</a>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <!-- <section class="hero">
+            <div class="hero-content"> -->
+                <!-- <div class="hero-text">
+                    <h1>Hi, I'm <span class="highlight">Mojtaba Zanousi</span></h1>
+                    <p>A passionate network engineer with a focus on creating beautiful, functional digital experiences.</p>
+                </div> -->
+                <!-- <div class="hero-image">
+                    <img src="images/961117.JPG" alt="Your Name">
+                </div> -->
+            <!-- </div>
+        </section> -->
+
+        <!-- About Section -->
+        <section class="about">
+            <h2 class="section-title"></h2>
+            <div class="about-content">
+                <img src="images/961117.JPG" alt="Mojtaba Zanousi">
+                <div class="about-text">
+                    <p>Hello! I'm a web developer and designer with a passion for creating digital experiences that are both beautiful and functional. With over 5 years of experience in the industry, I've worked with a variety of technologies and clients to bring their visions to life.</p>
+                    <p>My journey in web development began when I discovered the power of code to create interactive experiences. Since then, I've been continuously learning and expanding my skill set to stay at the forefront of web technologies.</p>
+                    <p>When I'm not coding, you can find me exploring the outdoors, reading about new technologies, or experimenting with new design techniques. I believe in the power of continuous learning and always strive to improve my craft.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Highlights Section -->
+        <section class="highlights">
+            <h2 class="section-title">What I Do</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Building responsive websites and web applications using modern technologies like HTML5, CSS3, JavaScript, and React.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Creating intuitive user interfaces and experiences that are both visually appealing and easy to navigate.</p>
+                </div>
+                <div class="highlight-card">
+                    <div class="highlight-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Ensuring websites look great and function perfectly on all devices, from desktops to smartphones.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Mojtaba Zanousi</h3>
+                    <p>Creating beautiful, functional digital experiences that make a difference.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i>https://github.com/netsec-zanousi</a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Navigation</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="projects.html">Projects</a></p>
+                    <p><a href="blog.html">Blog</a></p>
+                    <p><a href="contact.html">Contact</a></p>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> mojtaba.zanoosi@gmail.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Mojtaba Zanousi. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Simple JavaScript for mobile navigation toggle
+        document.querySelector('.nav-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

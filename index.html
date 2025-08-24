@@ -1,123 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Your Name</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mojtaba Zanousi - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Header & Navigation -->
-        <header>
-            <div class="header-container">
-                <a href="index.html" class="logo">Your Name</a>
-                <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-                <div class="nav-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-        </header>
+  <div class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <img src="images/961117.JPG" alt="Mojtaba Zanousi" class="profile-img">
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">HOME</a></li>
+          <li><a href="projects.html">PROJECTS</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </aside>
 
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Hi, I'm <span class="highlight">Mojtaba Zanousi</span></h1>
-                    <p>A passionate web developer and designer with a focus on creating beautiful, functional digital experiences.</p>
-                    <div class="hero-buttons">
-                        <a href="projects.html" class="btn btn-primary">View My Work</a>
-                        <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="images/961117.JPG" alt="Your Name">
-                </div>
-            </div>
-        </section>
+    <!-- Main Content -->
+    <main class="content">
+      <section id="intro" class="no-background">
+        <h1>Mojtaba Zanousi</h1>
+        <p class="tagline">Network · Virtualization · Security</p>
+      </section>
 
-        <!-- About Section -->
-        <section class="about">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hello! I'm a web developer and designer with a passion for creating digital experiences that are both beautiful and functional. With over 5 years of experience in the industry, I've worked with a variety of technologies and clients to bring their visions to life.</p>
-                    <p>My journey in web development began when I discovered the power of code to create interactive experiences. Since then, I've been continuously learning and expanding my skill set to stay at the forefront of web technologies.</p>
-                    <p>When I'm not coding, you can find me exploring the outdoors, reading about new technologies, or experimenting with new design techniques. I believe in the power of continuous learning and always strive to improve my craft.</p>
-                </div>
-            </div>
-        </section>
+      <section class="about">
+        <p class="highlight">I love building, understanding, and securing technology</p>
+        
+        <p>My core expertise lies in networking and cybersecurity, but I love any other 
+          infrastructure technologies.I enjoy writing code and create application for Linux</p>
+        
+          <p>I've worked as a technical lead, product owner, and hands-on engineer, 
+            building solutions that include RBAC and AAA frameworks for secure access control, 
+            client-server applications with session management, 
+            and custom industrial firewalls for protocols like Modbus and Siemens S7. 
+            My work often involves creating embedded software in C/C++ and Qt, 
+            designing real-time systems, and integrating DevOps practices 
+            using Git, Docker, and Azure DevOps to streamline development and deployment. </p>
+      </section>
 
-        <!-- Highlights Section -->
-        <section class="highlights">
-            <h2 class="section-title">What I Do</h2>
-            <div class="highlights-grid">
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>Web Development</h3>
-                    <p>Building responsive websites and web applications using modern technologies like HTML5, CSS3, JavaScript, and React.</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </div>
-                    <h3>UI/UX Design</h3>
-                    <p>Creating intuitive user interfaces and experiences that are both visually appealing and easy to navigate.</p>
-                </div>
-                <div class="highlight-card">
-                    <div class="highlight-icon">
-                        <i class="fas fa-mobile-alt"></i>
-                    </div>
-                    <h3>Responsive Design</h3>
-                    <p>Ensuring websites look great and function perfectly on all devices, from desktops to smartphones.</p>
-                </div>
-            </div>
-        </section>
+      <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>React, Vue.js</li>
+          <li>Node.js, Express</li>
+          <li>Python, Django</li>
+          <li>UI/UX Design</li>
+        </ul>
+      </section>
 
-        <!-- Footer -->
-        <footer>
-            <div class="footer-content">
-                <div class="footer-col">
-                    <h3>Your Name</h3>
-                    <p>Creating beautiful, functional digital experiences that make a difference.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="footer-col">
-                    <h3>Navigation</h3>
-                    <p><a href="index.html">Home</a></p>
-                    <p><a href="projects.html">Projects</a></p>
-                    <p><a href="blog.html">Blog</a></p>
-                    <p><a href="contact.html">Contact</a></p>
-                </div>
-                <div class="footer-col">
-                    <h3>Contact</h3>
-                    <p><i class="fas fa-envelope"></i> your.email@example.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Your Location</p>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2023 Your Name. All rights reserved.</p>
-            </div>
-        </footer>
-    </div>
 
-    <script>
-        // Simple JavaScript for mobile navigation toggle
-        document.querySelector('.nav-toggle').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('show');
-        });
-    </script>
+
+
+      <section class="projects">
+        <h2>Projects</h2>
+        <p>Some of my highlighted work goes here...</p>
+      </section>
+
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <div class="contact-links">
+          <!-- Gmail -->
+          <a href="mailto:mojtaba.zanoosi@gmail.com" class="contact-item">
+            <img src="images/gmail-logo.png" alt="Gmail">
+            mojtaba.zanoosi@gmail.com
+          </a>
+      
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/mojtaba-zanousi" target="_blank" class="contact-item">
+            <img src="images/linkedin-logo.png" alt="LinkedIn">
+            LinkedIn
+          </a>
+      
+          <!-- GitHub -->
+          <a href="https://github.com/netsec-zanousi" target="_blank" class="contact-item">
+            <img src="images/github-logo.png" alt="GitHub">
+            GitHub
+          </a>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>

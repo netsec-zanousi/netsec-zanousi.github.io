@@ -1,204 +1,183 @@
-/* Global Styles */
+/* Global */
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     line-height: 1.6;
     color: #333;
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f9f9f9;
-}
-
-/* Header Styles */
-header {
-    margin-bottom: 40px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #eee;
-    text-align: center;
-}
-
-h1 {
-    font-size: 2.5em;
-    margin-bottom: 0;
-    color: #222;
-}
-
-.subtitle {
-    font-size: 1.2em;
-    color: #666;
-    font-weight: normal;
-    margin-top: 5px;
-}
-
-nav {
-    margin-top: 20px;
+    background-color: #fdfdfd;
+  }
+  
+  /* Layout */
+  .layout {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-}
+    min-height: 100vh;
+  }
 
-nav a {
+  /* Global paragraph styling */
+  p {
+    font-size: 1rem;        /* default font size */
+    line-height: 1.8;       /* line spacing inside paragraph */
+    margin-bottom: 1.5em;   /* space after each paragraph */
+  }
+
+  /* Optional: keep highlighted lines bigger */
+  .highlight {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1em;     /* larger space after highlighted lines */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* space between items */
+    margin-top: 10px;
+  }
+  
+  .contact-item {
+    display: inline-flex;
+    align-items: center;
     text-decoration: none;
-    color: #0077cc;
+    color: #333;
     font-weight: 500;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-}
-
-nav a:hover {
-    text-decoration: underline;
-    background-color: #f0f7ff;
-}
-
-/* Section Styles */
-section {
-    margin-bottom: 40px;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #444;
-    border-bottom: 1px solid #eee;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-h3 {
-    color: #0077cc;
-    margin-bottom: 10px;
-}
-
-/* Bio Section */
-.bio {
-    display: flex;
-    align-items: flex-start;
-    gap: 30px;
-}
-
-.bio-text {
-    flex: 1;
-}
-
-.bio-text p {
-    margin-bottom: 15px;
-}
-
-.profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #eee;
-}
-
-/* Content Items */
-.talk, .article, .project {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #f5f5f5;
-}
-
-.talk:last-child, .article:last-child, .project:last-child {
-    border-bottom: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-}
-
-.talk p, .article p, .project p {
-    margin-bottom: 8px;
-}
-
-/* Links */
-a {
-    color: #0077cc;
-    text-decoration: none;
     transition: color 0.3s ease;
-}
+  }
+  
+  .contact-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .contact-item:hover {
+    color: #0077b5; /* LinkedIn blue as default hover */
+  }
+  
+  .contact-item[href^="mailto"]:hover {
+    color: #D93025; /* Gmail red */
+  }
+  
+  .contact-item[href*="github.com"]:hover {
+    color: #333; /* GitHub dark */
+  }
 
-a:hover {
-    color: #0055a5;
-    text-decoration: underline;
-}
-
-/* Contact Section */
-#contact ul {
-    list-style-type: none;
-    margin-top: 15px;
-}
-
-#contact li {
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-}
-
-#contact li:before {
-    content: "•";
-    color: #0077cc;
-    position: absolute;
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
     left: 0;
-}
+  }
+  
+  .sidebar .profile-img {
+    width: 200px; /* Slightly smaller for mobile */
+    height: 200px; /* Slightly smaller for mobile */
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 1px solid #444;
+    border-radius: 0; /* Square, no rounded corners */
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+    width: 100%;
+  }
+  
+  .sidebar nav ul li {
+    margin: 15px 0;
+  }
+  
+  .sidebar nav ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    padding: 8px 10px;
+    border-radius: 4px;
+    transition: background 0.3s ease, color 0.3s ease;
+  }
+  
+  .sidebar nav ul li a:hover,
+  .sidebar nav ul li a.active {
+    background: #0077cc;
+    color: #fff;
+  }
+  
+  /* Main Content */
+  .content {
+    margin-left: 250px; /* same as sidebar width */
+    padding: 40px;
+    flex: 1;
+    background: #fff;
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .content .tagline {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+    padding: 50px;
+    background: #f5f5f5;  /* light gray background */
+    border-radius: 0px;
+  }
+  
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #0077cc;
+  }
 
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 60px;
-    padding-top: 20px;
-    border-top: 1px solid #eee;
-    color: #777;
-    font-size: 0.9em;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    body {
-        padding: 15px;
+  section.no-background {
+    background: none;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: relative;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
     }
-    
-    .bio {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+  
+    .sidebar nav ul {
+      display: flex;
+      justify-content: space-around;
     }
-    
-    .profile-img {
-        margin-bottom: 20px;
+  
+    .content {
+        margin-left: 250px; /* same as sidebar width */
+        padding: 40px;
+        flex: 1;
+        background: #fff;
     }
-    
-    nav {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    section {
-        padding: 15px;
-    }
-}
-
-/* Animation for section appearance */
-section {
-    animation: fadeIn 0.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+  
+  }
+  
