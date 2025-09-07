@@ -122,6 +122,12 @@
   .sidebar .profile-img:hover {
     transform: scale(1.00);
   }
+
+  .MAPSM .mapsm-img {
+    border: 1px solid;
+    border-radius: 5px; /* slight rounded corners */
+    transition: transform 0.3s ease;
+  }
   
   .sidebar nav ul {
     list-style: none;
