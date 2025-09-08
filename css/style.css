@@ -214,7 +214,59 @@
   section.no-background {
     background: none;
   }
+
+  section.book-section {
+    background: none;
+    margin: 3rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+  }
+
+  .books-section h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    color: #0f172a;
+  }
+
+  .book-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
   
+ .book-image {
+    flex: 1;
+    text-align: right;
+  }
+
+  .book-image img {
+    max-width: 400px;  /* reduce size */
+    height: auto;
+    object-fit: cover;
+    border: 1px solid;
+    border-radius: 8px; /* slight rounded corners */
+    transition: transform 0.3s ease;
+  }
+
+  .book-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: background 0.2s ease;
+  }
+
   /* Responsive */
   @media (max-width: 768px) {
     .sidebar {
