@@ -247,7 +247,7 @@
   }
 
   .book-image img {
-    max-width: 400px;  /* reduce size */
+    max-width: 300px;  /* reduce size */
     height: auto;
     object-fit: cover;
     border: 1px solid;
