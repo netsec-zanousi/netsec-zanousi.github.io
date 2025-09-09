@@ -1,0 +1,156 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fdfdfd;
+  }
+  
+  /* Layout */
+  .layout {
+    display: flex;
+    min-height: 100vh;
+  }
+
+  /* Global paragraph styling */
+  p {
+    font-size: 1rem;        /* default font size */
+    line-height: 1.8;       /* line spacing inside paragraph */
+    margin-bottom: 1.5em;   /* space after each paragraph */
+  }
+
+  /* Optional: keep highlighted lines bigger */
+  .highlight {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 1em;     /* larger space after highlighted lines */
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 250px;
+    background: linear-gradient(180deg, #0f2027, #203a43, #2c5364); /* gradient */
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.3); /* subtle shadow */
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .sidebar .profile-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    margin: 40px 0 30px 0;
+    border: 1px solid;
+    border-radius: 12px; /* slight rounded corners */
+    transition: transform 0.3s ease;
+  }
+
+  .sidebar .profile-img:hover {
+    transform: scale(1.00);
+  }
+
+  .sidebar nav ul {
+    list-style: none;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 12px 0;
+  }
+  
+  .sidebar nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .sidebar nav ul li a:hover,
+  .sidebar nav ul li a.active {
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+    transform: translateX(5px);
+  }
+
+  
+  /* Main Content */
+  .content {
+    margin-left: 260px; /* same as sidebar width */
+    padding: 0px;
+    flex: 1;
+    background: #fff;
+  }
+  
+  .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .content .tagline {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 40px;
+  }
+
+  section {
+    margin-bottom: 20px;
+    padding: 50px;
+    background: #f5f5f5;  /* light gray background */
+    border-radius: 0px;
+  }
+  
+  section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #515353;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: relative;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .sidebar nav ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  
+    .content {
+        margin-left: 250px; /* same as sidebar width */
+        padding: 40px;
+        flex: 1;
+        background: #fff;
+    }
+  
+  }
+  
