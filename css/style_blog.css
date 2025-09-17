@@ -132,6 +132,14 @@
   color: #6b7280;
   margin-top: -2px;
 }
+.wazuh-logo img {
+  max-width: 100%;   /* never overflow container */
+  width: 250px;      /* preferred width */
+  height: auto;
+  display: block;
+  margin: 0.5rem 0;
+}
+
   /* Layout */
   .layout {
     display: flex;
@@ -256,12 +264,66 @@
     }
   
   }
-  
-/* Footer */
-.site-footer {
-  background: #1e293b;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
+
+  /* Blog Post Cards */
+.post {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
+.post:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.post h2 a {
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post h2 a:hover {
+  color: #1e40af;
+}
+
+.post-meta {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.post img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+.post .read-more {
+  display: inline-block;
+  margin-top: 1rem;
+  font-weight: 500;
+  color: #2563eb;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.post .read-more:hover {
+  color: #1e40af;
+  text-decoration: underline;
+}
+
+  
+  /* Footer */
+  .site-footer {
+    background: #1e293b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+  }

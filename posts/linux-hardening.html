@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linux Hardening Basics - Mojtaba Zanousi</title>
+  <link rel="stylesheet" href="../css/style_blog.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Main content -->
+    <main class="content">
+      <!-- Header -->
+      <div id="header-placeholder"></div>
+
+      <article class="blog-post">
+        <h1 class="post-title">Linux Hardening Basics for Secure Systems</h1>
+        <p class="post-meta">By Mojtaba Zanousi · Jan 2025 · Category: Linux</p>
+
+        <p>
+          Hardening a Linux system is a crucial step in reducing its attack surface 
+          and protecting it against unauthorized access. In this article, we’ll 
+          explore essential techniques for making your Linux environment more secure.
+        </p>
+
+        <h2>1. User and Access Management</h2>
+        <p>
+          Limit root access, enforce strong password policies, and use 
+          <code>sudo</code> instead of direct root logins.
+        </p>
+
+        <h2>2. Secure SSH</h2>
+        <pre><code># Example SSH hardening
+PermitRootLogin no
+PasswordAuthentication no
+</code></pre>
+
+        <h2>3. Firewall and Network Security</h2>
+        <p>
+          Use <code>ufw</code> or <code>nftables</code> to limit inbound traffic 
+          to only necessary services.
+        </p>
+
+        <p><a href="../blog.html" class="back-link">← Back to Blog</a></p>
+      </article>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+
+  <!-- JS include -->
+  <script src="../js/include.js"></script>
+</body>
+</html>
