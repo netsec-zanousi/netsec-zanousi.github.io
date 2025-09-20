@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style_blog.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- Main content -->
+    <main class="content">
+      <!-- Header -->
+      <div id="header-placeholder"></div>
+
+      <div class="blog-container">
+
+        <article class="post">
+
+        <div class="post-content">
+          <p>🔑 <strong>Purpose:</strong> It is used to securely hash passwords before storing them in <code>/etc/shadow</code> (on Linux) or other authentication systems.</p>
+          <p>🧠 <strong>Memory-hard:</strong> Like scrypt, it is designed to be resistant to brute-force attacks using GPUs, FPGAs, or ASICs by requiring a significant amount of memory and CPU time to compute.</p>
+          <p>🔒 <strong>Improvements over scrypt:</strong></p>
+
+          <ul>
+            <li>Supports additional security features like ROM port hardening.</li>
+            <li>Offers tunable parameters to make attacks harder.</li>
+            <li>Better defense against tradeoff attacks (where an attacker reduces memory use at the cost of more CPU).</li>
+          </ul>
+
+        </div>  
+
+        <p><a href="../security.html" class="back-link">← Back to Blog</a></p>
+        </article>
+
+
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <div id="../footer-placeholder"></div>
+
+  <!-- JS include -->
+  <script src="../js/include.js"></script>
+</body>
+</html>

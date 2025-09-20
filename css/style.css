@@ -90,12 +90,12 @@
   }
   
   .sidebar .profile-img {
-    width: 160px;
-    height: 160px;
-    object-fit: cover;
-    margin: 40px 0 30px 0;
-    border: 1px solid;
-    border-radius: 12px; /* slight rounded corners */
+    width: 150px;
+    height: 200px;
+    /* object-fit: cover; */
+    margin: 60px 0 120px 0;
+    /* border: 0.2px solid; */
+    border-radius: 2px; /* slight rounded corners */
     transition: transform 0.3s ease;
   }
 
